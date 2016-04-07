@@ -1,7 +1,10 @@
 /* *************************************
 Base
 ************************************* */
-
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight:500; 
+}
 
 
 /* *************************************
@@ -38,6 +41,39 @@ Layout
 	padding-top:80px;
 }
 
+.padding-left{
+	padding-left: 40px;
+}
+
+.padding-top-50{
+	padding-top:50px;
+}
+
+.list-group, .title, .nav{
+	font-family: 'Raleway', sans-serif;
+	font-weight:400; 
+}
+
+.list-group{
+	font-size: 20px;
+	font-weight:500;
+	float:left;
+}
+
+
+h1, .list-group{
+	text-shadow:2px 2px 2px #cbcbcb;
+}
+
+.title{
+	font-size: 24px;
+}
+
+
+.sub-title{
+	font-size:14px;
+}
+
 /*Override the margin for the Bootstrap rows*/
 .row{
 	margin:0;
@@ -71,6 +107,20 @@ Layout
 	color:white;
 }
 
+.img-circle{
+	border: 10px solid #ffffff;
+	box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.25), 0 6px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand{
+	font-family: 'Nothing You Could Do', cursive;
+	font-size: 35px;
+}
+
+
+.float-left{
+	float:left;
+}
 /* *************************************
 Modules
 ************************************* */
@@ -82,4 +132,11 @@ State
 .button:hover{
 	cursor: pointer; cursor: hand;
 }
+
+@media screen and (max-width: 992px) {
+	.align-bottom{
+		position: relative;
+	} 
+}
+
 
