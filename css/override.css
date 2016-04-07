@@ -65,13 +65,21 @@ Layout
 .sand-bg{
 	background-image:url(../img/sand.png);
 }
+
+
+.white{
+	color:white;
+}
+
 /* *************************************
 Modules
 ************************************* */
 
 
-
-
 /* *************************************
 State
 ************************************* */
+.button:hover{
+	cursor: pointer; cursor: hand;
+}
+

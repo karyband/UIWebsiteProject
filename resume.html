@@ -78,25 +78,25 @@
     <!--Sub Categories-->
     	<div class="row align-bottom">
     		<!--Four-column row, -->
-    		<div id="education" class="col-xs-12 col-sm-3 purple-bg text-center">
+    		<div id="education-button" class="col-xs-12 col-sm-3 purple-bg text-center button">
     			<div class="sub-category center-block">
     				<img src="img/gradcap.svg" alt="Graduation Cap" class="resize_60"><br />
     				Education
     			</div>
     		</div>
-    		<div id="digital-edia" class="col-xs-12 col-sm-3 teal-bg text-center">
+    		<div id="digital-button" class="col-xs-12 col-sm-3 teal-bg text-center button">
     			<div class="sub-category center-block">
     				<img src="img/monitor.svg" alt="Monitor" class="resize_60"><br />
     				Digital Media Work Experience
     			</div>
     		</div>
-    		<div id="computer-science" class="col-xs-12 col-sm-3 gold-bg text-center">
+    		<div id="computer-button" class="col-xs-12 col-sm-3 gold-bg text-center button">
     			<div class="sub-category center-block">
-    				<img src="img/computer.svg" alt="Computer" class="resize_60"><br />
+    				<img src="img/computer.svg" alt="Computer" class="resize_60" button><br />
     				Computer Science Work Experience
     			</div>
     		</div>
-    		<div id="other" class="col-xs-12 col-sm-3 orange-bg text-center">
+    		<div id="other-button" class="col-xs-12 col-sm-3 orange-bg text-center button">
     			<div class="sub-category center-block">
     				<img src="img/school.svg" alt="School Teacher" class="resize_60"><br />
     				Other Work Experience
@@ -105,12 +105,103 @@
     	</div>
     </section>
 
-    <!--Hidden Fields-->
-    <section>
-    	<div class="container">
+    <!--Section to Display Hidden Text-->
+    <section id="hidden-fw">
+    	<div id ="insert-hidden" class="container white">
 
     	</div>
     </section>
+
+
+    <!--Hidden Education Text-->
+    <section id="hidden-education" class="hidden">
+    	<div>
+    		<div class="">UNIVERSITY OF ROCHESTER - ROCHESTER, NY</div>
+			<div class="">B.A. in Digital Media Studies and B.A. in Computer Science</div>
+			<div class="">Expected May 2016</div>
+			Cumulative GPA: 3.48, Dean's List 5/7 semesters.
+		</div>
+
+		<div>
+			<div class="">ILLINOIS MATHEMATICS AND SCIENCE ACADEMY (IMSA) - AURORA, IL</div>
+			<div class="">High School Diploma</div>
+			<div class="">June 2012</div>
+			Cumulative GPA: 3.1
+		</div>
+    </section><!-- /hidden-education close-->
+
+
+    <!--Hidden Digital Experienc Text-->
+    <section id="hidden-digital" class="hidden">
+    	<div>
+	    	<div class="">Rettner Helpdesk Consultant and Student Lead</div>
+    		<div class="">Nov. 2014 – present</div>
+    		<div class="">UNIVERSITY OF ROCHESTER RETTNER MEDIA ARTS AND INNOVATION CENTER - ROCHESTER, NY</div>
+			<ul>
+				<li>Lead the Rettner Web Team in developing a new website and loaning system for the center for potential use.</li>
+				<li>Provide customer service in the Media Lab by helping with editing software, 3D printing, and media equipment.</li>
+			</ul>
+		</div>
+
+		<div>
+			<div class="">Creative Projects Intern</div>
+			<div class="">June-Aug. 2015</div>
+			<div class="">CHICAGO RUN CHICAGO, IL</div>
+			<ul>
+				<li>Worked on bettering the UI for the running web application the teachers and students use in the partnered schools; designed needed graphics and prints; managed their Squarespace website.</li>
+			</ul>
+		</div>
+
+		<div>
+			<div class="">Graphic Design/Web Design Intern &amp; Design Consultant</div>
+			<div class="">Jan. - May 2014, Feb. 2016 - present</div>
+			<div class="">THE COMMITTEE FOR HISPANIC CHILDREN AND FAMILIES, INC NY, NEW YORK</div>
+ 			<ul>
+ 				<li>Designed needed materials for the company including the 2012-2013 Annual Programmatic Report.</li>
+ 				<li>In charge of adding and styling all materials and pages for the company's new website using WordPress, HTML, and CSS.</li>
+				<li>Trained staff members on how to use the company's new website and created an extensive website manual.</li>
+			</ul>
+		</div>
+
+    </section><!-- /hidden-digital close -->
+
+
+    <!-- Hidden CSC Experience Text -->
+    <section id="hidden-csc" class="hidden">
+    	<div>
+    		<div class="">IT Center Helpdesk Consultant and Student Lead</div>
+    		<div class="">Sept. 2013 - present</div>
+    		<div class="">University of Rochester - Rochester, NY</div>
+    		<ul>
+    			<li>Supervise student staff, plan and administer training, and coordinate scheduling.</li>
+				<li>Troubleshoot software and networking issues, provide general customer service for UR students and faculty.</li>
+			</ul>
+		</div>
+
+		<div>
+			<div class="">Computer Science Applications' Course Teacher's Assistant</div>
+			<div class="">Sept. - Dec. 2013</div>
+			<div class="">University of Rochester - Rochester, NY</div>
+			<ul>
+				<li>Lead lab times to guide students and assist them with learning the class material on units regarding Microsoft Office/Excel,Photoshop, and Python programming language.</li>
+			</ul>
+		</div>
+
+    </section><!-- /hidden-csc close -->
+
+
+    <!-- Hidden Other Experience Text -->
+    <section id="hidden-other" class="hidden">
+    	<div>
+    		<div class="">Teacher/Class Assistant</div>
+    		<div class="">June 2012 - August 2015</div>
+    		<div class="">Lectura Montessori - Berwyn, IL</div>
+			<ul>
+				<li>Gained extensive knowledge on working independently and being self-driven as the Classroom Teacher in the Elementary Classroom for the Summer &amp;</li>
+			</ul>
+		</div>
+    </section><!-- /hidden-other close -->
+
 
     <footer>
     	<div class="container">
@@ -121,5 +212,7 @@
     <!-- jQuery for Bootstrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Custom javascript file -->
+    <script src="js/main.js"></script>
   </body>
 </html>
