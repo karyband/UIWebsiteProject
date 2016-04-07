@@ -1,0 +1,77 @@
+/* *************************************
+Base
+************************************* */
+
+
+
+/* *************************************
+Layout
+************************************* */
+.purple-bg{
+	background-color: #323795;
+}
+
+.teal-bg{
+	background-color: #256289;
+}
+
+.gold-bg{
+	background-color: #d6ab31;
+}
+
+.orange-bg{
+	background-color: #d68d31;
+}
+
+
+.full-height{
+	min-height:100vh;
+}
+
+.align-bottom{
+	width:100%;
+	position:absolute;
+	bottom:0px;
+}
+
+.padding-top-header{
+	padding-top:80px;
+}
+
+/*Override the margin for the Bootstrap rows*/
+.row{
+	margin:0;
+}
+
+.center-block{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sub-category{
+	padding:20px;
+	color:white;
+	font-size: 20px;
+	min-height: 200px;
+	max-width: 300px;
+}
+
+.resize_60{
+	width:90px;
+	padding-bottom: 5px;
+}
+
+
+.sand-bg{
+	background-image:url(../img/sand.png);
+}
+/* *************************************
+Modules
+************************************* */
+
+
+
+
+/* *************************************
+State
+************************************* */
