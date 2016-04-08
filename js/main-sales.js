@@ -12,7 +12,7 @@ $(function () {
             type: 'bar'
         },
         title: {
-            text: 'Total Sales Amount'
+            text: null
         },
         xAxis: {
             categories: ['2013', '2014'],
@@ -263,4 +263,195 @@ $("#nw-qt").click(function () {
             data: [ 15282, 16454, 19653, 10284]
         }]
     });
+});
+
+
+//2013 Quarter Breakdown Pie Chart
+function breakdown13() {
+        $('#breakdown13').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: null
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Region',
+                colorByPoint: true,
+                data: [{
+                    name: 'Quarter 1($84,057)',
+                    y:  84057
+                }, {
+                    name: 'Quarter 2($63,215)',
+                    y:  63215 
+                }, {
+                    name: 'Quarter 3($82,924)',
+                    y:  82924 
+                }, {
+                    name: 'Quarter 4($76,260)',
+                    y:  76260
+                }]
+            }]
+        });
+}
+
+breakdown13();
+
+//2013 Quarter Onclick Handler
+$("#quarter-brkdwn13").click(breakdown13);
+
+//2013 Regional Breakdown
+$("#regional-brkdwn13").click(function () {
+  $('#breakdown13').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: null
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Region',
+                colorByPoint: true,
+                data: [{
+                    name: 'South East($76,722)',
+                    y:  76722 
+                }, {
+                    name: 'South West($75,415)',
+                    y:  75415 
+                }, {
+                    name: 'North East($73,249)',
+                    y:  73249 
+                }, {
+                    name: 'North West($81,070)',
+                    y:  81070
+                }]
+            }]
+        });
+});
+
+
+//2014 Regional Sales Pie Chart
+function breakdown14() {
+        $('#breakdown14').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: null
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Region',
+                colorByPoint: true,
+                data: [{
+                    name: 'Quarter 1($66,726)',
+                    y:  66726
+                }, {
+                    name: 'Quarter 2($76,493)',
+                    y:  76493 
+                }, {
+                    name: 'Quarter 3($85,992)',
+                    y:  85992 
+                }, {
+                    name: 'Quarter 4($61,761)',
+                    y:  61761
+                }]
+            }]
+        });    
+  }
+
+breakdown14();
+
+//Quarter 2014 Breakdown Onclick Handler
+$("#quarter-brkdwn14").click(breakdown14);
+
+$("#regional-brkdwn14").click(function () {
+  $('#breakdown14').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: null
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Region',
+                colorByPoint: true,
+                data: [{
+                    name: 'South East($81,421)',
+                    y:  81421 
+                }, {
+                    name: 'South West($60,254)',
+                    y:  60254 
+                }, {
+                    name: 'North East($87,624)',
+                    y:  87624 
+                }, {
+                    name: 'North West($61,673)',
+                    y:  61673
+                }]
+            }]
+  });
 });

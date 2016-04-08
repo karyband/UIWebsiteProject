@@ -69,10 +69,15 @@
 
     <!-- Main Section -->
     <section id="main" class="white-bg">
-      <div id="overview" class="container padding-title">
+      <div id="overview" class="container-small center-block padding-title">
+
+        <h2>TOTAL SALES</h2>
+        <hr>
         <div id="total-year" class="single"></div> <!--Total Sales Amount-->
         <br />
 
+        <h2>QUARTER SALES</h2>
+        <hr>
         <div class="btn-group" role="group" aria-label="Quarter">
           <button type="button" id="overall-qt" class="btn btn-default quarter active">Overall</button>
           <button type="button" id="se-qt" class="btn btn-default quarter">South East</button>
@@ -81,7 +86,30 @@
           <button type="button" id="nw-qt" class="btn btn-default quarter">North West</button>
         </div>
         <div id="quarter" class="single"></div><!-- Sales by Quarter -->
+        <br />
 
+        <section class="row">
+          <div class="col-xs-12 col-sm-6">
+            <h2>2013 Breakdown</h2>
+            <hr>
+            <div class="btn-group" role="group" aria-label="2013 Breakdown">
+              <button type="button" id="quarter-brkdwn13" class="btn btn-default quarter active">Quarter</button>
+              <button type="button" id="regional-brkdwn13" class="btn btn-default quarter">Regional</button>
+              <button type="button" id="manager-brkdwn13" class="btn btn-default quarter">Manager</button>
+            </div>
+            <div id="breakdown13"></div><!--2013 Breakdown Pie Chart-->
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <h2>2014 Breakdown</h2>
+            <hr>
+            <div class="btn-group" role="group" aria-label="2014 Breakdown">
+              <button type="button" id="quarter-brkdwn14" class="btn btn-default quarter active">Quarter</button>
+              <button type="button" id="regional-brkdwn14" class="btn btn-default quarter">Regional</button>
+              <button type="button" id="manager-brkdwn14" class="btn btn-default quarter">Manager</button>
+            </div>
+            <div id="breakdown14"></div><!--2014 Breakdown Pie Chart-->
+          </div>
+        </section>
       </div>
     </section>
 

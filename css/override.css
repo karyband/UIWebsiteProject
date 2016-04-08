@@ -79,6 +79,10 @@ Layout
 	padding: 15px;
 }
 
+.col-sm-6{
+	padding:5px 15px;
+}
+
 .inline{
 	display:inline;
 	padding-top: 15px;
@@ -159,6 +163,10 @@ Layout
 
 .min-height{
 	min-height: 210px;
+}
+
+.container-small{
+	max-width: 800px;
 }
 
 .resize_60{
