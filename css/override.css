@@ -1,15 +1,22 @@
 /* *************************************
 Base
 ************************************* */
-h1{
-	font-family: 'Raleway', sans-serif;
-	font-weight:500; 
+h1, h2{
+	font-family: 'Anton', sans-serif;
+	font-size:50px;
 }
 
+h1{
+	display: inline;
+	font-size:100px;
+	line-height: 0.8;
+}
 
 /* *************************************
 Layout
 ************************************* */
+
+
 .purple-bg{
 	background-color: #323795;
 }
@@ -22,47 +29,59 @@ Layout
 	background-color: #d6ab31;
 }
 
+.lightblue-bg{
+	background-color: #3a7398;
+}
+
 .orange-bg{
 	background-color: #d68d31;
 }
 
-
-.full-height{
-	min-height:100vh;
+.sand-bg{
+	background-image:url(../img/sand.png);
 }
 
-.align-bottom{
-	width:100%;
-	position:absolute;
-	bottom:0px;
+.white{
+	color:white;
+}
+
+.teal{
+	color:#256289;
 }
 
 .padding-top-header{
-	padding-top:80px;
-}
-
-.padding-left{
-	padding-left: 40px;
-}
-
-.padding-top-50{
 	padding-top:50px;
 }
 
-.list-group, .title, .nav{
+.padding-title{
+	padding: 20px 40px;
+}
+
+
+.h1-subtitle{
+	font-family: 'Anton', sans-serif;
+	font-size:20px;
+	line-height: 0.8;
+}
+
+.sub-title,.title, .nav{
 	font-family: 'Raleway', sans-serif;
 	font-weight:400; 
+}
+
+.navbar-brand{
+	font-family: 'Nothing You Could Do', cursive;
+	font-size: 35px;
+}
+
+.list-group, .sub-category{
+	font-family: 'Roboto', sans-serif;
 }
 
 .list-group{
 	font-size: 20px;
 	font-weight:500;
-	float:left;
-}
-
-
-h1, .list-group{
-	text-shadow:2px 2px 2px #cbcbcb;
+	margin-bottom:10px;
 }
 
 .title{
@@ -79,9 +98,24 @@ h1, .list-group{
 	margin:0;
 }
 
+.center{
+	width: 100%
+	margin:0 auto;
+}
+
 .center-block{
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
+}
+
+
+
+.float-left{
+	float:left;
+}
+
+.resize_60{
+	width:90px;
+	padding-bottom: 5px;
 }
 
 .sub-category{
@@ -92,35 +126,13 @@ h1, .list-group{
 	max-width: 300px;
 }
 
-.resize_60{
-	width:90px;
-	padding-bottom: 5px;
-}
-
-
-.sand-bg{
-	background-image:url(../img/sand.png);
-}
-
-
-.white{
-	color:white;
-}
-
 .img-circle{
 	border: 10px solid #ffffff;
 	box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.25), 0 6px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
-.navbar-brand{
-	font-family: 'Nothing You Could Do', cursive;
-	font-size: 35px;
-}
 
 
-.float-left{
-	float:left;
-}
 /* *************************************
 Modules
 ************************************* */
