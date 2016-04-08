@@ -12,8 +12,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 
     <!--Requires HTML5 shim and Respond.js for IE8 support, -->
     <!--[if lt IE 9]>
@@ -35,7 +34,7 @@
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
       				</button>
-      				<a class="navbar-brand" href="#">Karina Banda</a>
+      				<a class="navbar-brand" href="#"></a>
     			</div>
     			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       				<ul class="nav navbar-nav navbar-right">
@@ -50,34 +49,36 @@
     <!--Qualifications-->
     <section class="padding-top-header">
     	<div class="row">
-    		<aside class="col-sm-5 text-right padding-title teal">
+    		<aside id="column-1" class="col-sm-5 text-right padding-title teal"><img src="img/profile_square.png" alt="profile_img" class="img-circle img-responsive pull-right">
+            <div class="clearfix"></div>
                 <h1>KARINA<br />BANDA</h1><br />
                 <div class="h1-subtitle">
                     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> kbanda2@u.rochester.edu<br />
                     <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> (708) 699-7330
                 </div>
+                
     		</aside>
 
-    		<article class="col-sm-7 teal-bg white padding-title">
+    		<article id="column-2" class="col-sm-7 teal-bg white padding-title">
     			<h2>QUALIFICATIONS</h2>
     				<div class="list-group">
     					Proficiency in HTML5, CSS, JavaScript, jQuery, and Photoshop
-    					<div class="sub-title">- used in responsive front-end developing and designs</div> 
+    					<div class="description">- used in responsive front-end developing and designs</div> 
     				</div>
     				<div class="list-group">
     					Experience with PHP, MySQL, and AJAX
-    					 <div class="sub-title">- in building dynamic back-ends in web development</div>
+    					 <div class="description">- in building dynamic back-ends in web development</div>
     				</div>
 					<div class="list-group">
 						Knowledge in using front-end frameworks and libraries
-						<div class="sub-title">- such as Bootstrap and Modernizr</div>
+						<div class="description">- such as Bootstrap and Modernizr</div>
 					</div>
 					<div class="list-group">
 						Ability in both working in teams and independently
-						<div class="sub-title">- in design and development projects and work environments</div>
+						<div class="description">- in design and development projects and work environments</div>
 					</div>
 					<div class="list-group">Academic experience in project development
-						<div class="sub-title">- from project design, need-finding, to the implementation and production</div>
+						<div class="description">- from project design, need-finding, to the implementation and production</div>
 					</div>
 					<div class="list-group">Experience in customer service</div>
     		</article>
@@ -85,33 +86,50 @@
     </section>
 
     <!-- Education -->
-    <section class ="lightblue-bg">
-        <div class="container">
-            <img src="img/gradcap.svg" alt="Graduation Cap" class="resize_60"> 
-            Education
+    <section class ="lightblue-bg white">
+        <div class="container padding-title">
+            <img src="img/gradcap.svg" alt="Graduation Cap" class="resize_60 align-bottom"> 
+            <h2 class="inline">Education</h2>
+            <hr>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="title">UNIVERSITY OF ROCHESTER - ROCHESTER, NY</div>
+                    <div class="sub-title">B.A. in Digital Media Studies and B.A. in Computer Science</div>
+                    <div class="sub-sub-title">Expected May 2016</div>
+                    <div class="description">Cumulative GPA: 3.48, Dean's List 5/7 semesters.</div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="title">ILLINOIS MATHEMATICS AND SCIENCE ACADEMY (IMSA) - AURORA, IL</div>
+                    <div class="sub-title">High School Diploma</div>
+                    <div class="sub-sub-title">June 2012</div>
+                    <div class="description">Cumulative GPA: 3.1</div>
+                </div>
+            </div>
+
         </div>
     </section>
 
 
     
     <!--Experience Categories-->
-    <section class="container">
-    	<div class="row">
+    <section class="white-bg">
+    	<div class="container center-block row">
     		<!-- Three-column row, -->
-    		<div id="digital-button" class="col-xs-12 col-sm-4 teal-bg text-center button">
-    			<div class="sub-category center-block">
+    		<div id="digital-button" class="col-xs-12 col-sm-4 text-center button">
+    			<div class="sub-category center-block purple-bg">
     				<img src="img/monitor.svg" alt="Monitor" class="resize_60"><br />
     				Digital Media Work Experience
     			</div>
     		</div>
-    		<div id="computer-button" class="col-xs-12 col-sm-4 gold-bg text-center button">
-    			<div class="sub-category center-block">
+    		<div id="computer-button" class="col-xs-12 col-sm-4 text-center button">
+    			<div class="sub-category center-block gold-bg">
     				<img src="img/computer.svg" alt="Computer" class="resize_60" button><br />
     				Computer Science Work Experience
     			</div>
     		</div>
-    		<div id="other-button" class="col-xs-12 col-sm-4 orange-bg text-center button">
-    			<div class="sub-category center-block">
+    		<div id="other-button" class="col-xs-12 col-sm-4 text-center button">
+    			<div class="sub-category center-block orange-bg">
     				<img src="img/school.svg" alt="School Teacher" class="resize_60"><br />
     				Other Work Experience
     			</div>
@@ -120,29 +138,12 @@
     </section>
 
     <!--Section to Display Hidden Text-->
-    <section id="hidden-fw">
-    	<div id ="insert-hidden" class="container white">
+    <section id="hidden-fw" class="white-bg">
+    	<div id ="insert-hidden" class="white container">
 
     	</div>
     </section>
 
-
-    <!--Hidden Education Text-->
-    <section id="hidden-education" class="hidden">
-    	<div>
-    		<div class="title">UNIVERSITY OF ROCHESTER - ROCHESTER, NY</div>
-			<div class="">B.A. in Digital Media Studies and B.A. in Computer Science</div>
-			<div class="">Expected May 2016</div>
-			Cumulative GPA: 3.48, Dean's List 5/7 semesters.
-		</div>
-
-		<div>
-			<div class="">ILLINOIS MATHEMATICS AND SCIENCE ACADEMY (IMSA) - AURORA, IL</div>
-			<div class="">High School Diploma</div>
-			<div class="">June 2012</div>
-			Cumulative GPA: 3.1
-		</div>
-    </section><!-- /hidden-education close-->
 
 
     <!--Hidden Digital Experienc Text-->

@@ -3,7 +3,7 @@ Base
 ************************************* */
 h1, h2{
 	font-family: 'Anton', sans-serif;
-	font-size:50px;
+	font-size:40px;
 }
 
 h1{
@@ -12,11 +12,22 @@ h1{
 	line-height: 0.8;
 }
 
+hr{
+	color:white;
+	margin:10px 0;
+}
+
+body{
+	background-image:url(../img/sand.png);
+}
+
 /* *************************************
 Layout
 ************************************* */
 
-
+.single{
+	min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto;
+}
 .purple-bg{
 	background-color: #323795;
 }
@@ -30,13 +41,16 @@ Layout
 }
 
 .lightblue-bg{
-	background-color: #3a7398;
+	background-color: #457fa5;
 }
 
 .orange-bg{
 	background-color: #d68d31;
 }
 
+.white-bg{
+	background-color:white;
+}
 .sand-bg{
 	background-image:url(../img/sand.png);
 }
@@ -57,6 +71,22 @@ Layout
 	padding: 20px 40px;
 }
 
+.col-xs-12{
+	padding: 5px 0;
+}
+
+.col-sm-4{
+	padding: 15px;
+}
+
+.inline{
+	display:inline;
+	padding-top: 15px;
+}
+
+.align-bottom{
+	vertical-align: bottom;
+}
 
 .h1-subtitle{
 	font-family: 'Anton', sans-serif;
@@ -64,17 +94,24 @@ Layout
 	line-height: 0.8;
 }
 
-.sub-title,.title, .nav{
+.description, .nav{
 	font-family: 'Raleway', sans-serif;
 	font-weight:400; 
 }
 
 .navbar-brand{
-	font-family: 'Nothing You Could Do', cursive;
 	font-size: 35px;
 }
 
-.list-group, .sub-category{
+.subnav{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.single{
+	padding:10px 0;
+}
+
+.list-group, .sub-category, .title, .sub-title, .sub-sub-title{
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -85,11 +122,20 @@ Layout
 }
 
 .title{
-	font-size: 24px;
+	font-size: 18px;
+	color:#ffe395;
+}
+
+.sub-title, .sub-sub-title{
+	font-size: 16px;
+}
+
+.sub-title{
+	color:#fff4d5;
 }
 
 
-.sub-title{
+.description{
 	font-size:14px;
 }
 
@@ -107,10 +153,12 @@ Layout
 	margin: 0 auto;
 }
 
-
-
 .float-left{
 	float:left;
+}
+
+.min-height{
+	min-height: 210px;
 }
 
 .resize_60{
@@ -124,14 +172,20 @@ Layout
 	font-size: 20px;
 	min-height: 200px;
 	max-width: 300px;
+	border-radius: 20px;
 }
 
 .img-circle{
 	border: 10px solid #ffffff;
-	box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.25), 0 6px 15px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.20), 0 6px 15px 0 rgba(0, 0, 0, 0.20);
+	margin-bottom: 10px;
 }
 
-
+.pull-right :before{
+	    content:'';
+    display:block;
+    clear: both;
+}
 
 /* *************************************
 Modules
@@ -145,10 +199,15 @@ State
 	cursor: pointer; cursor: hand;
 }
 
+.subnav.active, .subnav:hover{
+	text-decoration: underline;
+}
+
 @media screen and (max-width: 992px) {
 	.align-bottom{
 		position: relative;
 	} 
 }
+
 
 

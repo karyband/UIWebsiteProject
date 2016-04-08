@@ -12,7 +12,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 
     <!--Requires HTML5 shim and Respond.js for IE8 support, -->
     <!--[if lt IE 9]>
@@ -34,7 +34,7 @@
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
       				</button>
-      				<a class="navbar-brand" href="#">Karina Banda</a>
+      				<a class="navbar-brand" href="#"></a>
     			</div>
     			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       				<ul class="nav navbar-nav navbar-right">
@@ -43,28 +43,46 @@
       				</ul>
     			</div>
   			</div>
-		</nav>
-	</header>
+		  </nav>
+	  </header>
 
     <!-- Sub Header-->
-    <section class="padding-top-50">
-        <div class="container center-block">
-            <h1>Sales Report <span>2013-2014</span></h1>
-            <div>
-                <div class="float-left">View By: </div>
-                <ul class="nav navbar-nav navbar">
-                    <li class="subnav">Overview</li>
-                    <li class="subnav">Quarter</li>
-                    <li class="subnav">Region</li>
-                    <li class="subnav">Manager</li>
-                </ul>
-            </div>
-        </div>
+    <section class="padding-top-header">
+      <div class="row">
+        <aside class="col-sm-5 text-right padding-title teal">
+          <h1>SALES<br />REPORT</h1>
+        </aside>
+
+        <article class="col-sm-7 teal-bg white padding-title min-height">
+          <h2>2013 - 2014</h2>
+        </article>
+      </div>
     </section>
 
-    <!-- Main Section -->
-    <section>
 
+    <section class ="lightblue-bg white">
+      <div class="container padding-title">
+        <h2 class="inline">Overview</h2>
+      </div>
+    </section>
+
+
+    <!-- Main Section -->
+    <section id="main" class="white-bg">
+      <div id="overview" class="container padding-title">
+        <div id="total-year" class="single"></div> <!--Total Sales Amount-->
+        <br />
+
+        <div class="btn-group" role="group" aria-label="Quarter">
+          <button type="button" id="overall-qt" class="btn btn-default quarter active">Overall</button>
+          <button type="button" id="se-qt" class="btn btn-default quarter">South East</button>
+          <button type="button" id="sw-qt" class="btn btn-default quarter">South West</button>
+          <button type="button" id="ne-qt" class="btn btn-default quarter">North East</button>
+          <button type="button" id="nw-qt" class="btn btn-default quarter">North West</button>
+        </div>
+        <div id="quarter" class="single"></div><!-- Sales by Quarter -->
+
+      </div>
     </section>
 
     <footer>
@@ -77,6 +95,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Custom javascript file -->
-    <script src="js/main.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="js/highcharts-js/themes/sand-signika.js"></script>
+
+
+    <script src="js/main-sales.js"></script>
   </body>
 </html>
