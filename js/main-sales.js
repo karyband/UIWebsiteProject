@@ -292,7 +292,7 @@ function breakdown13() {
                 }
             },
             series: [{
-                name: 'Region',
+                name: 'Quarter',
                 colorByPoint: true,
                 data: [{
                     name: 'Quarter 1($84,057)',
@@ -362,6 +362,60 @@ $("#regional-brkdwn13").click(function () {
 });
 
 
+//2013 Manager Average Breakdown
+$("#manager-brkdwn13").click(function () {
+ $('#breakdown13').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Average Total Sales under Manager'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Manager',
+                colorByPoint: true,
+                data: [{
+                    name: 'Leonardo($22,054.50)',
+                    y:  22054.50
+                }, {
+                    name: 'Paul($18,312.25)',
+                    y:  18312.25 
+                }, {
+                    name: 'Michelangelo($21,796)',
+                    y:  21796 
+                },{
+                    name: 'Raphael($19,528)',
+                    y:  19528
+                }, {
+                    name: 'Ringo($22,486)',
+                    y:  22486
+                },{
+                    name: 'John($16306.5)',
+                    y:  16306.5
+                },{
+                    name: 'George($17,873)',
+                    y:  17873
+                }]
+            }]
+        });
+  });
+
 //2014 Regional Sales Pie Chart
 function breakdown14() {
         $('#breakdown14').highcharts({
@@ -388,7 +442,7 @@ function breakdown14() {
                 }
             },
             series: [{
-                name: 'Region',
+                name: 'Quarter',
                 colorByPoint: true,
                 data: [{
                     name: 'Quarter 1($66,726)',
@@ -409,9 +463,10 @@ function breakdown14() {
 
 breakdown14();
 
-//Quarter 2014 Breakdown Onclick Handler
+//2014 Quarter Breakdown Onclick Handler
 $("#quarter-brkdwn14").click(breakdown14);
 
+//2014 Regional Breakdown
 $("#regional-brkdwn14").click(function () {
   $('#breakdown14').highcharts({
             chart: {
@@ -455,3 +510,51 @@ $("#regional-brkdwn14").click(function () {
             }]
   });
 });
+
+
+$("#manager-brkdwn14").click(function () {
+  $('#breakdown14').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Average Total Sales under Manager'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Manager',
+                colorByPoint: true,
+                data: [{
+                    name: 'Leonardo($20,331)',
+                    y:  20331
+                }, {
+                    name: 'Paul($21,906)',
+                    y:  21906  
+                }, {
+                    name: 'Michelangelo($15,063.50)',
+                    y:  15063.50 
+                },{
+                    name: 'Raphael($15,418.25)',
+                    y:  15418.25
+                }, {
+                    name: 'Donatello($20,379.50)',
+                    y:  20379.50
+                }]
+            }]
+        });
+  });
