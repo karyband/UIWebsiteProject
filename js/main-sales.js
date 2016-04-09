@@ -937,7 +937,7 @@ $("#ringo-bt").click(function () {
             type: 'bar'
         },
         title: {
-            text: 'Total:  $40,759'
+            text: 'Total: $22,486'
         },
         subtitle: {
             text: null
