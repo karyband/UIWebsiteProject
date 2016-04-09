@@ -10,8 +10,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/override.css" rel="stylesheet">
 
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 
     <!--Requires HTML5 shim and Respond.js for IE8 Bootstrap support -->
@@ -23,11 +24,12 @@
   </head>
   <body>
 
-  	<!--Navbar-->
+  	<!--Bootstrap Navbar-->
     <header>
     	<nav class="navbar navbar-inverse navbar-fixed-top">
   			<div class="container">
     			<div class="navbar-header">
+                    <!-- Toggles to dropdown navbar for small resolutions--> 
       				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         				<span class="sr-only">Toggle navigation</span>
         				<span class="icon-bar"></span>
@@ -46,19 +48,23 @@
 		</nav>
 	</header>
 
-    <!--Qualifications-->
+    <!--Intro Section-->
     <section class="padding-top-header">
+
+        <!-- Two Column Row-->
     	<div class="row">
-    		<aside id="column-1" class="col-sm-5 text-right padding-title teal"><img src="img/profile_square.png" alt="profile_img" class="img-circle img-responsive pull-right">
-            <div class="clearfix"></div>
+            <!-- Personal Information -->
+    		<aside id="column-1" class="col-sm-5 text-right padding-title teal">
+                <img src="img/profile_square.png" alt="profile_img" class="img-circle img-responsive pull-right">
+                <div class="clearfix"></div>
                 <h1>KARINA<br />BANDA</h1><br />
                 <div class="h1-subtitle">
                     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> kbanda2@u.rochester.edu<br />
                     <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> (708) 699-7330
                 </div>
-                
     		</aside>
 
+            <!-- Qualifications -->
     		<article id="column-2" class="col-sm-7 teal-bg white padding-title">
     			<h2>QUALIFICATIONS</h2>
     				<div class="list-group">
@@ -88,7 +94,7 @@
     <!-- Education -->
     <section class ="lightblue-bg white">
         <div class="container-medium center-block padding-title">
-            <img src="img/gradcap.svg" alt="Graduation Cap" class="resize_60 align-bottom"> 
+            <img src="img/gradcap.svg" alt="Graduation Cap" class="resize_90 align-bottom"> 
             <h2 class="inline">Education</h2>
             <hr class="white">
             <div class="row">
@@ -115,29 +121,31 @@
     <!--Experience-->
     <section class="white-bg">
     	<div class="container-medium center-block row">
-        
+            
+            <!-- Experience Toggle Buttons -->
             <aside id="ex-buttons" class="col-sm-3">
-        		<!-- Three-column row, -->
+        		<!-- 1 column, 3row -->
         		<div class="col-sm-12 text-center button">
                     <div id="digital-button" class="sub-category center-block purple">
-        			    <img src="img/monitor.svg" alt="Monitor" class="resize_60"><br />
-        			    <div class="description">Digital Media Work Experience</div>
+        			    <img src="img/monitor.svg" alt="Monitor" class="resize_90"><br />
+        			    <div class="description dBold">Digital Media Work Experience</div>
                     </div>
         		</div>
         		<div class="col-sm-12 text-center button">
         			<div id="computer-button" class="sub-category center-block gold">
-        				<img src="img/computer.svg" alt="Computer" class="resize_60" button><br />
-        				<div class="description">Computer Science Work Experience</div>
+        				<img src="img/computer.svg" alt="Computer" class="resize_90" button><br />
+        				<div class="description dBold">Computer Science Work Experience</div>
         			</div>
         		</div>
         		<div class="col-sm-12 text-center button">
         			<div id="other-button" class="sub-category center-block orange">
-        				<img src="img/school.svg" alt="School Teacher" class="resize_60"><br />
-        				<div class="description">Other Work Experience</div>
+        				<img src="img/school.svg" alt="School Teacher" class="resize_90"><br />
+        				<div class="description dBold">Other Work Experience</div>
         			</div>
         		</div>
             </aside>
 
+            <!-- Experience Text -->
             <article id="experience" class="col-xs-12 col-sm-9 container-medium center-block">
                 <section id="digital"><!--Digital Experience-->
                      <div>
@@ -214,7 +222,13 @@
 
     <footer>
     	<div class="container">
+            <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
+            <div>Icons made by <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+            <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+            <div>The Charts library used is by <a href="http://www.highcharts.com/" title="Highcharts">Highcharts</a></div>
     	</div>
     </footer>
 

@@ -1,6 +1,10 @@
 /* *************************************
 Base
 ************************************* */
+body{
+	background-image:url(../img/sand.png);
+}
+
 h1, h2{
 	font-family: 'Anton', sans-serif;
 	font-size:40px;
@@ -16,9 +20,18 @@ hr{
 	margin:10px 0;
 }
 
-body{
-	background-image:url(../img/sand.png);
+footer{
+	font-size: 11px;
+	color:grey;
+	background-color: #101010;
+	padding: 10px;
+	text-align:right;
 }
+
+a{
+	color:darkgrey;
+}
+
 
 /* *************************************
 Layout
@@ -99,31 +112,17 @@ Layout
 	vertical-align: bottom;
 }
 
-.h1-subtitle{
-	font-family: 'Anton', sans-serif;
-	font-size:20px;
-	line-height: 0.8;
-}
-
-.description, .nav{
-	font-family: 'Raleway', sans-serif;
-	font-weight:400; 
-}
-
-.navbar-brand{
-	font-size: 35px;
-}
-
-.subnav{
-	padding-left: 5px;
-	padding-right: 5px;
-}
 .single{
 	padding:10px 0;
 }
 
 
 /*Text*/
+.description, .nav{
+	font-family: 'Raleway', sans-serif;
+	font-weight:400; 
+}
+
 .list-group, .sub-category, .title, .sub-title, .sub-sub-title{
 	font-family: 'Roboto', sans-serif;
 }
@@ -152,22 +151,16 @@ Layout
 	font-size:14px;
 }
 
+.dBold{
+	font-weight: 600;
+}
 /*Override the margin for the Bootstrap rows*/
 .row{
 	margin:0;
 }
 
-.center{
-	width: 100%
-	margin:0 auto;
-}
-
 .center-block{
 	margin: 0 auto;
-}
-
-.float-left{
-	float:left;
 }
 
 .min-height{
@@ -183,7 +176,7 @@ Layout
 	padding: 40px;
 }
 
-.resize_60{
+.resize_90{
 	width:90px;
 	padding-bottom: 5px;
 }
@@ -227,16 +220,6 @@ State
 ************************************* */
 .button:hover{
 	cursor: pointer; cursor: hand;
-}
-
-.subnav.active, .subnav:hover{
-	text-decoration: underline;
-}
-
-@media screen and (max-width: 992px) {
-	.align-bottom{
-		position: relative;
-	} 
 }
 
 @media screen and (max-width: 770px) {

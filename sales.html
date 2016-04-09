@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume</title>
+    <title>Sales Report</title>
 
     <!--CSS Files-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/override.css" rel="stylesheet">
 
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 
-    <!--Requires HTML5 shim and Respond.js for IE8 support, -->
+    <!--Requires HTML5 shim and Respond.js for IE8 Bootstrap support, -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -54,7 +55,7 @@
         </aside>
 
         <article class="col-sm-7 teal-bg white padding-title min-height">
-          <h2>2013 - 2014</h2>
+          <h2>YEARS:<br />2013<br />2014</h2>
         </article>
       </div>
     </section>
@@ -62,7 +63,28 @@
 
     <section class ="lightblue-bg white">
       <div class="container-small center-block padding-title">
-        <h2 class="inline">Overview</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="title light-gold">Year:</div>
+              <div class="sub-title">Year associated to the sales.</div>
+            </div>
+            <div class="col-sm-4">
+              <div class="title light-gold">Quarter:</div>
+              <div class="sub-title">Quarter within a year associated to the sales.</div>
+            </div>
+            <div class="col-sm-4">
+              <div class="title light-gold">Region:</div>
+              <div class="sub-title">Geographic region associated to the sales.</div>
+            </div>
+            <div class="col-sm-4">
+              <div class="title light-gold">Regional Manager:</div>
+              <div class="sub-title">Regional Manager associated to the sales.</div>
+            </div>
+            <div class="col-sm-4">
+              <div class="title light-gold">Sales:</div>
+              <div class="sub-title">Sales amount.</div>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -85,7 +107,22 @@
           <button type="button" id="ne-qt" class="btn btn-default quarter">North East</button>
           <button type="button" id="nw-qt" class="btn btn-default quarter">North West</button>
         </div>
-        <div id="quarter" class="single center-block"></div><!-- Sales by Quarter -->
+        <div id="quarter" class="single center-block"></div><!-- Sales by Quarter-->
+        <br />
+
+        <h2>SALES BY REGIONAL MANAGER</h2>
+        <hr>
+        <div class="btn-group" role="group" aria-label="Quarter">
+          <button type="button" id="john-bt" class="btn btn-default quarter active">John</button>
+          <button type="button" id="leonardo-bt" class="btn btn-default quarter">Leonardo</button>
+          <button type="button" id="paul-bt" class="btn btn-default quarter">Paul</button>
+          <button type="button" id="george-bt" class="btn btn-default quarter">George</button>
+          <button type="button" id="mich-bt" class="btn btn-default quarter">Michelangelo</button>
+          <button type="button" id="ringo-bt" class="btn btn-default quarter">Ringo</button>
+          <button type="button" id="raphael-bt" class="btn btn-default quarter">Raphael</button>
+          <button type="button" id="don-bt" class="btn btn-default quarter">Donatello</button>
+        </div>
+        <div id="manager" class="single center-block"></div><!-- Sales by Regional Maner -->
         <br />
 
         <section class="row">
@@ -114,9 +151,15 @@
     </section>
 
     <footer>
-    	<div class="container">
+      <div class="container">
+            <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
-    	</div>
+            <div>Icons made by <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+            <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+            <div>The Charts library used is by <a href="http://www.highcharts.com/" title="Highcharts">Highcharts</a></div>
+      </div>
     </footer>
 
     <!-- jQuery for Bootstrap-->

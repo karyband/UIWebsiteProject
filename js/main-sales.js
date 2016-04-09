@@ -575,3 +575,550 @@ $("#manager-brkdwn14").click(function () {
             }]
         });
   });
+
+
+
+function john(){$(function () {
+      $('#manager').highcharts({
+          chart: {
+              type: 'bar'
+          },
+          title: {
+              text: 'Total: $32,613'
+          },
+          subtitle: {
+              text: null
+          },
+          xAxis: {
+              categories: ["John"],
+              title: {
+                  text: null
+              }
+          },
+          yAxis: {
+              min: 0,
+              title: {
+                  text: 'Dollars ($)',
+                  align: 'high'
+              },
+              labels: {
+                  overflow: 'justify'
+              }
+          },
+          tooltip: {
+              valuePrefix: '$'
+          },
+          plotOptions: {
+              bar: {
+                  dataLabels: {
+                      enabled: true
+                  }
+              }
+          },
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'top',
+              x: -40,
+              y: 80,
+              floating: false,
+              borderWidth: 1,
+              backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+              shadow: true
+          },
+          credits: {
+              enabled: false
+          },
+          series: [{
+              name: '2013 Quarter 1',
+              data: [14013]
+          }, {
+              name: '2013 Quarter 2',
+              data: [18600]
+          }]
+      });
+  });
+}
+
+//John
+john();
+$("#john-bt").click(john);
+
+//Leonardo
+$("#leonardo-bt").click(function () {
+    $('#manager').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Total: $44,109'
+        },
+        subtitle: {
+            text: null
+        },
+        xAxis: {
+            categories: ["Leonardo"],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Dollars ($)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valuePrefix: '$'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: false,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: '2013 Quarter 3',
+            data: [23353]
+        }, {
+            name: '2013 Quarter 4',
+            data: [20756]
+        },{
+            name: '2014 Quarter 1',
+            data: [18378]
+        }, {
+            name: '2014 Quarter 2',
+            data: [22284]
+        }]
+    });
+});
+
+//Paul
+$("#paul-bt").click(function () {
+    $('#manager').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Total: $160,873'
+        },
+        subtitle: {
+            text: null
+        },
+        xAxis: {
+            categories: ["Paul"],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Dollars ($)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valuePrefix: '$'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: false,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: '2013 Quarter 1',
+            data: [24149]
+        }, {
+            name: '2013 Quarter 2',
+            data: [13119]
+        },{
+            name: '2013 Quarter 3',
+            data: [23284]
+        }, {
+            name: '2013 Quarter 4',
+            data: [12697]
+        },{
+            name: '2014 Quarter 1',
+            data: [21630]
+        }, {
+            name: '2014 Quarter 2',
+            data: [19603]
+        },{
+            name: '2014 Quarter 3',
+            data: [23947]
+        }, {
+            name: '2014 Quarter 4',
+            data: [22444]
+        }]
+    });
+});
+
+
+$("#raphael-bt").click(function () {
+    $('#manager').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Total: $120,257'
+        },
+        subtitle: {
+            text: null
+        },
+        xAxis: {
+            categories: ["Raphael"],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Dollars ($)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valuePrefix: '$'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: false,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: '2013 Quarter 2',
+            data: [18383]
+        },{
+            name: '2013 Quarter 3',
+            data: [19190]
+        }, {
+            name: '2013 Quarter 4',
+            data: [21011]
+        },{
+            name: '2014 Quarter 1',
+            data: [15282]
+        }, {
+            name: '2014 Quarter 2',
+            data: [16454]
+        },{
+            name: '2014 Quarter 3',
+            data: [19653]
+        }, {
+            name: '2014 Quarter 4',
+            data: [10284]
+        }]
+    });
+});
+
+//Donatello
+$("#don-bt").click(function () {
+    $('#manager').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Total:  $40,759'
+        },
+        subtitle: {
+            text: null
+        },
+        xAxis: {
+            categories: ["Donatello"],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Dollars ($)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valuePrefix: '$'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: false,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: '2014 Quarter 3',
+            data: [24473]
+        }, {
+            name: '2014 Quarter 4',
+            data: [16286]
+        }]
+    });
+});
+
+$("#ringo-bt").click(function () {
+    $('#manager').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Total:  $40,759'
+        },
+        subtitle: {
+            text: null
+        },
+        xAxis: {
+            categories: ["Ringo"],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Dollars ($)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valuePrefix: '$'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: false,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: '2013 Quarter 1',
+            data: [22486]
+        }]
+    });
+});
+
+$('#mich-bt').click(function () {
+    $('#manager').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Total: $82,050 '
+        },
+        subtitle: {
+            text: null
+        },
+        xAxis: {
+            categories: ["Michelangelo"],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Dollars ($)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valuePrefix: '$'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: false,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: '2013 Quarter 4',
+            data: [21796]
+        },{
+            name: '2014 Quarter 1',
+            data: [11436]
+        }, {
+            name: '2014 Quarter 2',
+            data: [18152]
+        },{
+            name: '2014 Quarter 3',
+            data: [17919]
+        }, {
+            name: '2014 Quarter 4',
+            data: [12747]
+        }]
+    });
+});
+
+$("#george-bt").click(function () {
+    $('#manager').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Total: $53,619 '
+        },
+        subtitle: {
+            text: null
+        },
+        xAxis: {
+            categories: ["George"],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Dollars ($)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valuePrefix: '$'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: false,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: '2013 Quarter 1',
+            data: [23409]
+        }, {
+            name: '2013 Quarter 2',
+            data: [13113]
+        },{
+            name: '2013 Quarter 3',
+            data: [17097]
+        }]
+    });
+});
