@@ -13,7 +13,6 @@ h1{
 }
 
 hr{
-	color:white;
 	margin:10px 0;
 }
 
@@ -25,27 +24,14 @@ body{
 Layout
 ************************************* */
 
-.single{
-	min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto;
-}
-.purple-bg{
-	background-color: #323795;
-}
 
 .teal-bg{
 	background-color: #256289;
 }
 
-.gold-bg{
-	background-color: #d6ab31;
-}
-
 .lightblue-bg{
 	background-color: #457fa5;
-}
-
-.orange-bg{
-	background-color: #d68d31;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
 
 .white-bg{
@@ -59,16 +45,37 @@ Layout
 	color:white;
 }
 
+.gold{
+	color: #ba9427;
+}
+
+.light-gold{
+		color:#ffe395;
+}
+
+.orange{
+	color: #d68d31;
+}
+.purple{
+	color: #323795;
+}
+
+
 .teal{
 	color:#256289;
 }
 
 .padding-top-header{
 	padding-top:50px;
+	border-bottom-style: solid;
 }
 
 .padding-title{
 	padding: 20px 40px;
+}
+
+.padding-bottom{
+	padding-bottom: 20px;
 }
 
 .col-xs-12{
@@ -76,7 +83,7 @@ Layout
 }
 
 .col-sm-4{
-	padding: 15px;
+	padding-top: 15px;
 }
 
 .col-sm-6{
@@ -115,6 +122,8 @@ Layout
 	padding:10px 0;
 }
 
+
+/*Text*/
 .list-group, .sub-category, .title, .sub-title, .sub-sub-title{
 	font-family: 'Roboto', sans-serif;
 }
@@ -127,7 +136,7 @@ Layout
 
 .title{
 	font-size: 18px;
-	color:#ffe395;
+	text-transform: uppercase;
 }
 
 .sub-title, .sub-sub-title{
@@ -169,18 +178,19 @@ Layout
 	max-width: 800px;
 }
 
+.container-medium{
+	max-width:1060px;
+	padding: 40px;
+}
+
 .resize_60{
 	width:90px;
 	padding-bottom: 5px;
 }
 
 .sub-category{
-	padding:20px;
-	color:white;
+	padding:5px;
 	font-size: 20px;
-	min-height: 200px;
-	max-width: 300px;
-	border-radius: 20px;
 }
 
 .img-circle{
@@ -189,16 +199,28 @@ Layout
 	margin-bottom: 10px;
 }
 
-.pull-right :before{
-	    content:'';
-    display:block;
-    clear: both;
+.single{
+	min-width: 310px; 
+	max-width: 800px; 
+	height: 400px; 
 }
 
 /* *************************************
 Modules
 ************************************* */
+#experience{
+	padding-top:10px;
+}
 
+#other{
+	min-height: 150px;
+}
+
+#digital,#csc{
+	border-bottom-style: solid;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+}
 
 /* *************************************
 State
@@ -215,6 +237,17 @@ State
 	.align-bottom{
 		position: relative;
 	} 
+}
+
+@media screen and (max-width: 770px) {
+	.pull-right{
+		float:none!important;
+		margin: 0 auto;
+	} 
+
+	.text-right{
+		text-align: center;
+	}
 }
 
 

@@ -1,3 +1,6 @@
+//Jquery file for the sales.html functionality and Highchart charts and graphs
+//Jquery is needed for Highcharts
+
 //Bootstrap toggle Active
 $(".btn-group > .btn").click(function(){
     $(this).siblings().removeClass("active");
@@ -266,6 +269,12 @@ $("#nw-qt").click(function () {
 });
 
 
+
+
+
+
+
+
 //2013 Quarter Breakdown Pie Chart
 function breakdown13() {
         $('#breakdown13').highcharts({
@@ -372,7 +381,7 @@ $("#manager-brkdwn13").click(function () {
                 type: 'pie'
             },
             title: {
-                text: 'Average Total Sales under Manager'
+                text: 'Average Total Sales under Regional Manager'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -387,8 +396,9 @@ $("#manager-brkdwn13").click(function () {
                     showInLegend: true
                 }
             },
+
             series: [{
-                name: 'Manager',
+                name: 'Regional Manager',
                 colorByPoint: true,
                 data: [{
                     name: 'Leonardo($22,054.50)',
@@ -491,6 +501,9 @@ $("#regional-brkdwn14").click(function () {
                     showInLegend: true
                 }
             },
+            /*Regional Managers are listed by reoccuring managers first. 
+            This enables the recurring objects to be the 
+            same color on other charts.*/
             series: [{
                 name: 'Region',
                 colorByPoint: true,
@@ -511,7 +524,7 @@ $("#regional-brkdwn14").click(function () {
   });
 });
 
-
+//2014 Manager Average Breakdown
 $("#manager-brkdwn14").click(function () {
   $('#breakdown14').highcharts({
             chart: {
@@ -521,7 +534,7 @@ $("#manager-brkdwn14").click(function () {
                 type: 'pie'
             },
             title: {
-                text: 'Average Total Sales under Manager'
+                text: 'Average Total Sales under Regional Manager'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -536,8 +549,12 @@ $("#manager-brkdwn14").click(function () {
                     showInLegend: true
                 }
             },
+
+            /*Regional Managers are listed by reoccuring managers first, in the
+            same order as 2013. This enables the recurring objects to be the 
+            same color on other charts.*/
             series: [{
-                name: 'Manager',
+                name: 'Regional Manager',
                 colorByPoint: true,
                 data: [{
                     name: 'Leonardo($20,331)',
